@@ -24,9 +24,27 @@ const Login = ({ navigation }) => {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+          marginBottom: 30,
+        }}
+      >
+        <Image
+          style={{
+            height: 290,
+            width: "70%",
+            borderRadius: 30,
+            marginVertical: 30,
+          }}
+          source={require("../assets/undraw_Access_account_re_8spm.png")}
+        />
+      </View>
       <View style={{ flex: 1, marginHorizontal: 22 }}>
-        <View style={{ marginVertical: 22 }}>
-          <Text
+        <View style={{ marginBottom: -35 }}>
+          {/* <Text
             style={{
               fontSize: 22,
               fontWeight: "bold",
@@ -35,9 +53,9 @@ const Login = ({ navigation }) => {
             }}
           >
             Nous sommes ravis de vous revoir.
-          </Text>
+          </Text> */}
 
-          <Text
+          {/* <Text
             style={{
               fontSize: 16,
               color: COLORS.black,
@@ -45,7 +63,7 @@ const Login = ({ navigation }) => {
           >
             Connectez-vous pour accéder à tous vos e-mails, rester en contact
             avec vos contacts et gérer votre boîte de réception avec facilité.
-          </Text>
+          </Text> */}
         </View>
 
         <View
@@ -181,16 +199,16 @@ const Login = ({ navigation }) => {
           <Text>Souvenir de moi</Text>
         </View>
 
-          <Button
-            onPress={() => navigation.navigate("HomeScreen")}
-            title="Se connecter"
-            textColor={COLORS.white}
-            filled
-            style={{
-              marginTop: 18,
-              marginBottom: 4,
-            }}
-          />
+        <Button
+          onPress={() => navigation.navigate("HomeScreen")}
+          title="Se connecter"
+          textColor={COLORS.white}
+          filled
+          style={{
+            marginTop: 18,
+            marginBottom: 4,
+          }}
+        />
 
         {/* <View
             style={{
@@ -268,31 +286,7 @@ const Login = ({ navigation }) => {
           style={{
             flexDirection: "row",
             justifyContent: "center",
-            marginVertical: 22,
-          }}
-        >
-          <Text style={{ fontSize: 16, color: COLORS.black }}>
-            Vous n'avez pas de compte ?
-          </Text>
-          <Pressable onPress={() => navigation.navigate("Signup")}>
-            <Text
-              style={{
-                fontSize: 16,
-                color: COLORS.primary,
-                fontWeight: "bold",
-                marginLeft: 6,
-              }}
-            >
-              Créez
-            </Text>
-          </Pressable>
-        </View>
-
-        <View
-          style={{
-            flexDirection: "row",
-            justifyContent: "center",
-            marginVertical: 5,
+            marginVertical: 15,
           }}
         >
           <Text style={{ fontSize: 16, color: COLORS.black }}>

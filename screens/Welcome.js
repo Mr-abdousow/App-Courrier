@@ -101,10 +101,10 @@ const Welcome = ({navigation}) => {
 
           <Button
             title="Démarrer"
-            onPress={() => navigation.navigate("Signup")}
+            onPress={() => navigation.navigate("Login")}
           />
 
-          <View
+          {/* <View
             style={{
               flexDirection: "row",
               marginTop: 22,
@@ -132,7 +132,7 @@ const Welcome = ({navigation}) => {
                 Se Connecter
               </Text>
             </Pressable>
-          </View>
+          </View> */}
         </View>
       </View>
     </LinearGradient>
